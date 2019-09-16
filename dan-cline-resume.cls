@@ -62,7 +62,6 @@
     \vspace{-1.5\baselineskip\ }
     \sectionsep
   }
-  
 }
 
 
@@ -113,13 +112,13 @@
       \end{flushright}
     \end{minipage}
   \end{minipage}
-  
+
   \headersep
   \vspace{-4mm}
 }
 
 \newcommand{\education}[6]{
-  \primarysection{education} 
+  \primarysection{Education}
   \vspace{-6mm}
   \subsection*{\raggedright #1}
   \raggedright{\descript{#2 in #3}}
