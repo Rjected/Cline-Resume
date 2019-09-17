@@ -13,11 +13,16 @@
 \usepackage{enumitem}
 \usepackage{calc}
 
+% Add qr code support and hyperref
+\usepackage{hyperref}
+\usepackage{qrcode}
+
 % color definitions
-\usepackage[usenames, dvipsnames]{xcolor}
+\PassOptionsToPackage{usenames, dvipsnames}{xcolor}
 \definecolor{primary}{HTML}{000000}
 \definecolor{headings}{HTML}{000000}
 \definecolor{seperator}{HTML}{bbbbbb}
+
 
 % Set font to sans serif (replace with helvetica font)
 \usepackage{helvet}
@@ -124,6 +129,30 @@
   \raggedright{\descript{#2 in #3}}
   \vspace{2mm}
   \location{\\#4 - #5 \vspace{2mm} \\#6}
+}
+
+\newcommand{\undergradcourses}[1]{
+  \vspace{-2mm}
+  \subsubsection*{Undergrad Courses}
+  #1 \\
+}
+
+\newcommand{\gradcourses}[1]{
+  \vspace{-2mm}
+  \subsubsection*{Graduate Courses}
+  #1 \\
+}
+
+\newcommand{\courses}[1]{
+  \vspace{2mm}
+  \textbf{Courses:}
+
+  #1 \\
+}
+
+\newcommand{\interests}[1]{
+  \vspace{2mm}
+  \textbf{Interests:} #1 \\
 }
 
 \newenvironment{tightemize}{
