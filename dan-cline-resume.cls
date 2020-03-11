@@ -150,6 +150,13 @@
   #1 \\
 }
 
+\newcommand{\talks}[1]{
+  \vspace{2mm}
+  \textbf{Talks:}
+
+  #1 \\
+}
+
 \newcommand{\interests}[1]{
   \vspace{2mm}
   \textbf{Interests:} #1 \\
