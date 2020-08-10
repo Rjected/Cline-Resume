@@ -1,4 +1,7 @@
 # Cline-Resume
+
+![Build LaTeX document](https://github.com/Rjected/Cline-Resume/workflows/Build%20LaTeX%20document/badge.svg)
+
 Cline-Resume is a TeX resume template inspired by the Deedy Resume and work by Damian Watracz
 
 It looks like this:
