@@ -1,0 +1,38 @@
+#!/bin/bash
+
+cd personal-info
+PHONE_NUMBER_FILE=phone-number.tex
+EMAIL_FILE=email.tex
+GITHUB_FILE=github.tex
+LINKEDIN_FILE=linkedin.tex
+SAMPLE_PHONE_NUMBER_FILE=sample_phone-number.tex
+SAMPLE_EMAIL_FILE=sample_email.tex
+SAMPLE_GITHUB_FILE=sample_github.tex
+SAMPLE_LINKEDIN_FILE=sample_linkedin.tex
+# the default template uses phone-number.tex, email.tex, and github.tex
+# first check if phone-number.tex exists.
+if [[ ! -f "$PHONE_NUMBER_FILE" ]]; then
+    cp $SAMPLE_PHONE_NUMBER_FILE $PHONE_NUMBER_FILE
+    echo "Phone number info populated with a sample! Change personal-info/phone-number.tex to
+    change it."
+fi
+
+if [[ ! -f "$EMAIL_FILE" ]]; then
+    cp $SAMPLE_EMAIL_FILE $EMAIL_FILE
+    echo "Email info populated with a sample! Change personal-info/email.tex to
+    change it."
+fi
+
+if [[ ! -f "$GITHUB_FILE" ]]; then
+    cp $SAMPLE_GITHUB_FILE $GITHUB_FILE
+    echo "Github info populated with a sample! Change personal-info/github.tex to
+    change it."
+fi
+
+if [[ ! -f "$LINKEDIN_FILE" ]]; then
+    cp $SAMPLE_LINKEDIN_FILE $LINKEDIN_FILE
+    echo "LinkedIn info populated with a sample! Change personal-info/linkedin.tex to
+    change it."
+fi
+
+echo "All personal info files populated!"
