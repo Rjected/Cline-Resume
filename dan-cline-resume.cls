@@ -13,6 +13,9 @@
 \usepackage{enumitem}
 \usepackage{calc}
 
+% Add useful line spacing modifiers
+\usepackage{setspace}
+
 % Add qr code support and hyperref
 \usepackage{hyperref}
 \usepackage{qrcode}
@@ -93,12 +96,31 @@
 }
 
 % Name / title section
-\newcommand{\namesection}[4]{
+% \namesection adds the main name section to the top of the document.
+% The first and second parameters are the first and last name.
+% There isnt really any reason why they are not all in one parameter but
+% whatever, just know that they are separated by a space lol.
+% The third parameter is the title, as in "software engineer" or "phd student"
+% or "CTO" or something idk.
+% The fourth parameter is the spacing in between the first and the last name, in
+% case your first and last name takes up multiple lines and the spacing needs to
+% be adjusted.
+% Finally, the fifth parameter is the content on the right of the title.
+% I put some personal info here but you can put whatever you want.
+% The font is a little smaller so keep in mind that there is some automatic
+% formatting that gets applied.
+\newcommand{\namesection}[5]{
   \begin{minipage}[b]{0.3\textwidth}
     \color{primary}{
-      \fontsize{30pt}{36pt}
+      \fontsize{30pt}{#4}
       \selectfont
+      % TODO: make this a parameter in case people dont like how it looks.
+
       \textbf{#1 #2}
+      % DO NOT REMOVE THIS BLANK LINE!!!!!!!!!!
+      % Removing this blank line will cause the baselineskip parameter of the
+      % fontsize command to have no effect!
+
     }
   \end{minipage}
   \hfill
@@ -113,7 +135,7 @@
       \fontsize{8pt}{10pt}
       \selectfont
       \begin{flushright}
-        #4
+        #5
       \end{flushright}
     \end{minipage}
   \end{minipage}
