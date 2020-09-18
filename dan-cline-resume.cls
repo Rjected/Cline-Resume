@@ -155,7 +155,7 @@
 
 \newcommand{\undergradcourses}[1]{
   \vspace{-2mm}
-  \subsubsection*{Undergrad Courses}
+  \subsubsection*{Undergraduate Courses}
   #1 \\
 }
 
