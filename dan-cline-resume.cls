@@ -84,9 +84,7 @@
 % subheadings command
 \newcommand{\runsubsection}[1]{
   \color{primary}{
-    \textbf{#1}
-  }
-}
+    \textbf{#1}}}
 
 % location command
 \newcommand{\location}[1]{
