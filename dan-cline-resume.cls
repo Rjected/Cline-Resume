@@ -11,7 +11,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{enumitem}
-\usepackage{calc}
+% \usepackage{calc}
 
 % Add useful line spacing modifiers
 \usepackage{setspace}
@@ -148,7 +148,7 @@
   \subsection*{\raggedright #1}
   \raggedright{\descript{#2 in #3}}
   \vspace{2mm}
-  \location{\\#4 - #5 \vspace{2mm} \\#6}
+  \location{\\#4 - #5 \vspace{2mm} \\ #6}
 }
 
 \newcommand{\undergradcourses}[1]{
