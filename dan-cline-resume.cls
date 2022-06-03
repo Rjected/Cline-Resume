@@ -26,6 +26,9 @@
 \definecolor{headings}{HTML}{000000}
 \definecolor{seperator}{HTML}{bbbbbb}
 
+\usepackage{titlesec}
+% \titleformat*{\section}{\fontsize{16}\selectfont}
+\titleformat*{\subsection}{\fontsize{13pt}\selectfont}
 
 % Set font to sans serif (replace with helvetica font)
 \usepackage{helvet}
@@ -110,7 +113,7 @@
 \newcommand{\namesection}[5]{
   \begin{minipage}[b]{0.3\textwidth}
     \color{primary}{
-      \fontsize{30pt}{#4}
+      \fontsize{24pt}{#4}
       \selectfont
       % TODO: make this a parameter in case people dont like how it looks.
 
